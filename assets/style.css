@@ -1,0 +1,40 @@
+table {
+    border-collapse: collapse;
+    margin-bottom: 2em;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.slide thead th {
+    background-color: #70944C;
+    color: #FFFFFF;
+    padding: 5px 7px 6px;
+}
+th, td {
+    line-height: 1.2;
+    vertical-align: top;
+}
+th {
+    text-align: left;
+}
+.slide .subHead th {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #97B17D;
+    color: #494848;
+    padding: 5px 7px 6px;
+}
+tr.level1 td, tbody tr.level1 th {
+    background-color: #C6D4B7;
+}
+tr.level2 td, tbody tr.level2 th {
+    background-color: #D9E2CF;
+}
+.level3 td, tbody tr.level3 th {
+    background-color: #E6EFDD;
+}
+.slide table td, .slide tbody th {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #97B17D;
+    color: #333333;
+    padding: 5px 7px 6px;
+}
