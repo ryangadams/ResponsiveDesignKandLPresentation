@@ -9,7 +9,7 @@
 	
 	<title>Responsive Design in Knowledge &amp; Learning</title>
 	
-	<meta name="description" content="A presentation about how we intend to deliver a responsive application in KandL. Delivered at Team Brief on 13th July 2012">
+	<meta name="description" content="A presentation about how we intend to deliver a responsive application in KandL.">
 	<meta name="author" content="Ryan Adams">
 	<meta name="viewport" content="width=1024, user-scalable=no">
 	
@@ -41,51 +41,42 @@
 </section>
 
 <section class="slide" id="mobile-first">
-	<h2>What is Responsive Design?</h2>
+	<h2>Our Editorial Requirement</h2>
 	<blockquote>
 		<p>as a general rule; let's design/wireframe for mobile first this time round? (yes, responsive design, etc etc)</p>
-	<p><cite>Chris Sizemore</cite></p>
+	<p><cite>email from Chris Sizemore (Editorial Lead, Knowledge &amp; Learning)</cite></p>
 	</blockquote>
 </section>
 
 <section class="slide" id="what-is-responsive-design">
-	<h2>What is Responsive Design?</h2>
+	<h2>What do we mean by Responsive Design?</h2>
 	<blockquote>
 		<p>any approach that delivers elegant visual experiences regardless of the size of the user’s display and the limitations or capabilities of the device</p>
 		<p><cite>Jeffrey Zeldman 
 		<a href="http://bit.ly/zeldman_responsive">http://bit.ly/zeldman_responsive</a></cite></p>
 	</blockquote>
-</section>
-
-<section class="slide" id="what-is-responsive-technical">
-	<h2>What is Responsive Design?</h2>
 	<blockquote><p>
 		Delivering  the same features of a product, optimised for each device, to all devices at the same time, using the same codebase.</p>
 		<p><cite>Ryan Adams</cite></p>
 	</blockquote>
 </section>
 
+<section class="slide" id="issues-we-face">
+<h1>Issues we face</h1>
+</section>
 
 <section class="slide" id="today">
-	<h2>The standard approach</h2>
+	<h2>Mean Time to Mobile Parity?</h2>
 	<div id="today-desktop" style="width:50%;float:left;">
 		<h2>desktop</h2>
 		<img src="assets/bbc-homepage-2012.png" />
-		<ul>
-			<li>http://www.bbc.co.uk</li>
-			<li>About 650KB page weight</li>
-			<li>92 http requests</li>
-		</ul>
+		<p>Launched November 2011</p>
 	</div>
 
 	<div id="today-mobile" style="width:50%;float:left;">
 		<h2>mobile</h2>
 		<img src="assets/bbc-homepage-mobile-2012.png" />
-		<ul>
-			<li>http://m.bbc.co.uk</li>
-			<li>130KB page weight</li>
-			<li>16 requests</li>
-		</ul>
+		<p>Launched May 2012</p>
 	</div>
 </section>
 <!-- 
@@ -93,7 +84,7 @@ Device Detection, but UA string isn't everything
 Needs to be on the server side, therefore requires m.bbc or a different url
 -->
 <section class="slide" id="android-sizes">
-	<h2>Mobile?</h2>
+	<h2>What do we actually mean by Mobile?</h2>
 	<img src="assets/android-variants1.png">
 	<pre><a href="http://stephanierieger.com/the-trouble-with-android/">http://stephanierieger.com/the-trouble-with-android/</a></pre>
 </section>
@@ -105,93 +96,6 @@ Needs to be on the server side, therefore requires m.bbc or a different url
 	<pre>+375 others</pre>
 </section>
 
-<section class="slide" id="support-table">
-	<h2>BBC Browser Support Table</h2>
-	<table summary="Browser support and test levels" class="browserTable">
-
-	            <thead>
-	              <tr>
-	                <th>Browser</th>
-	                <th><abbr title="Internet Explorer">IE</abbr></th>
-	                <th><abbr title="Firefox">FF<sup>1</sup></abbr></th>
-	                <th>Chrome<sup>2</sup></th>
-	                <th>Opera<sup>1</sup></th>
-	                <th>Safari<sup>1</sup></th>
-	                <th>Konqueror</th>
-	              </tr>
-	              <tr class="subHead">
-	                <th>Platform</th>
-	                <th>Windows</th>
-	                <th>All</th>
-	                <th>Windows &amp; Mac</th>
-	                <th>All</th>
-	                <th>All</th>
-	                <th>Linux</th>
-	              </tr>
-	            </thead>
-	            <tbody>
-	              <tr class="level1">
-	                <th>Level 1</th>
-	                <td>6, 7, 8</td>
-	                <td><abbr title="Mozilla"></abbr><abbr title="Firefox">FF</abbr>&nbsp;4.0.x, 3.6.x, 3.5.x, 3.0.x</td>
-	                <td><em>latest x.x</em></td>
-	                <td>10.x, 9.6.x, 9.5.x</td>
-	                <td>5.x, 4.x, 3.x</td>
-	                <td>&nbsp;</td>
-	              </tr>
-	              <tr class="level2">
-	                <th>Level 2</th>
-	                <td>5.5</td>
-	                <td>FF 2.0.x</td>
-	                <td>&nbsp;</td>
-	                <td>9.x</td>
-	                <td>2.x (Mac)</td>
-	                <td>4.4x</td>
-	              </tr>
-	              <tr class="level3">
-	                <th>Level 3</th>
-	                <td>1, 2, 3, 4, 5</td>
-	                <td><abbr title="Mozilla Firefox">FF 1.5.x</abbr>, 1.0.x</td>
-	                <td>&nbsp;</td>
-	                <td>8-</td>
-	                <td>1.x (Mac)</td>
-	                <td>3-</td>
-	              </tr>
-	              <tr>
-	                <th>Must test</th>
-	                <td>6, 7, 8</td>
-	                <td>FF 3.6.3<br>
-	                  (PC Only)</td>
-	                <td><em>latest x.x</em><sup>1</sup></td>
-	                <td>10.53 (PC)</td>
-	                <td>5.0 (Mac, 4.0.3 (Mac)</td>
-	                <td>&nbsp;</td>
-	              </tr>
-	              <tr>
-	                <th>Should test</th>
-	                <td>5.5</td>
-	                <td>FF 3.0.6 (Mac), 3.5.7 (PC)</td>
-	                <td>&nbsp;</td>
-	                <td style="width:6em">9.52, 9.64</td>
-	                <td>3.2.1 (PC), 3.2.1 (Mac)</td>
-	                <td>&nbsp;</td>
-	              </tr>
-	              <tr>
-	                <th>Engine</th>
-	                <td>Trident (4-7), Ohare (1-3)</td>
-	                <td>Gecko</td>
-	                <td>Webkit</td>
-	                <td>Presto</td>
-	                <td>Webcore</td>
-	                <td>KHTML</td>
-	              </tr>
-	            </tbody>
-	          </table>
-	<p>&nbsp;</p>
-	<pre><a href="http://www.bbc.co.uk/guidelines/futuremedia/technical/browser_support.shtml">http://www.bbc.co.uk/guidelines/futuremedia/technical/browser_support.shtml</a></pre>
-</section>
-
-
 <section class="slide" id="browser-support-two">
 	<h2>Browser Support</h2>
 	<blockquote>
@@ -202,7 +106,7 @@ Needs to be on the server side, therefore requires m.bbc or a different url
 
 
 <section class="slide" id="browser-support-statement">
-<h1>We will support all browsers, but we won't treat them all the same.</h1>
+<h1 style="font-size:2.5em;max-width:80em;">We will support all browsers, but we won't treat them all the same.</h1>
 </section>
 
 <section class="slide" id="but-how">
@@ -254,11 +158,36 @@ if ('querySelector' in document &amp;&amp;
 	<h2>What we learned</h2>
 	<ul>
 		<li>Homepages are hard</li>
-		<li>Need to think about mobile &amp; desktop at the same time</li>
+		<li>Need to think about all layouts at the same time</li>
 		<li>Javascript behaviours that depend on layout are tricky</li>
 		<li>Media elements need careful consideration - video, images</li>
+		<li>TV views have not been included, yet</li>
 	</ul>
 </section>
+
+<section class="slide" id="prototype-learnings">
+	<h2>Our modular approach</h2>
+	<ul>
+		<li>Uses BBC Module (PAL based assembly an option)</li>
+		<li>Uses Cuts The Mustard (or similar technique) to enhance page on ondomready event</li>
+		<li>wraps module html, css and js in json</li>
+		<li>combines muliple modules in one request</li>
+		<li>highly cachable URLs (both base page and js loaded)</li>
+	</ul>
+</section>
+
+
+<section class="slide" id="technical-questions">
+	<h2>What we need</h2>
+	<ul>
+		<li>better css management</li>
+		<li>can we do without jquery?</li>
+		<li>how do we monitor a page which is assembled in the browser?</li>
+		<li>video, images still not solved</li>
+		<li><strike>responsive barlesque</strike></li>
+	</ul>
+</section>
+
 
 
 
